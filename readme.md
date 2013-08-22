@@ -2,6 +2,13 @@
 
 This Messages package work like a flash message containers, and it's copied from fuel-depot ( https://github.com/fuel/depot/blob/1.0/develop/fuel/app/classes/messages.php ) for package it.
 
+## Installation
+
+1. Clone or download this repository
+2. Move it in fuel/packages/
+3. Add 'messages' to the 'always_load/packages' array in app/config/config.php (or call \Package::load('messages'); whenever you want to use it).
+
+
 ## Usage
 
 In your controller for example :
@@ -35,12 +42,6 @@ In your view :
     \Messages::reset();
 <?php endif; ?>
 ```
-
-## Installation
-
-1. Clone or download this repository
-2. Move it in fuel/packages/
-3. Add 'messages' to the 'always_load/packages' array in app/config/config.php (or call \Package::load('messages'); whenever you want to use it).
 
 # Twig
 
